@@ -1,0 +1,141 @@
+<html>
+<head>
+  <title>Document Search </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="bundle.js"></script>
+<meta charset="utf-8" />
+
+<style>
+body {
+  height: 100%;
+  margin: 0;
+  background-image: url(./bg3.jpg);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.486);
+  background-position: center;
+  color: black;
+
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+p {
+  color:red;
+  font-size: 20px;
+}
+
+.Puspesh {
+  color:black;
+  font-size: 20px;
+  font-weight: bold;
+}
+.in {
+    background-color: black;
+    color: #fff;
+    padding: 30px;
+    width: 800px;
+    margin: 50px auto;
+}
+
+.ipc {
+    border-radius: 0;
+    outline: none;
+    border-color: #fff;
+}
+
+.bb {
+    background-color: #ffffff;
+    text-transform: uppercase;
+}
+
+a {
+    color: #fff;
+}
+
+.shd {
+    text-shadow: #000 1px 1px 10px;
+}
+
+.hd {
+    text-shadow: #000 1px 1px 10px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+}
+</style>
+</head>
+  <body>
+    <div class="container">
+      <div class="Puspesh">
+      <div class="row">
+        <div class="col-sm-12">
+            <h1>Document_Search</h1>
+          
+            <form id="Insert_Dummy_Document_Details">
+              <h2>Dummy_Document_details</h2>
+              <div class="form-group">
+                  <label for="Insert_Dummy_Document_Details-Docname">Document_Name</label>
+                  <input id="Insert_Dummy_Document_Details-Docname" type="text" class="form-control"></input>
+                  <label for="Insert_Dummy_Document_Details-Key">Encryption Key</label>
+                  <input id="Insert_Dummy_Document_Details-Key" type="text" class="form-control"></input>
+                  <label for="Insert_Dummy_Document_Details-Salt">Salt</label>
+                  <input id="Insert_Dummy_Document_Details-Salt" type="text" class="form-control"></input>
+                  <label for="Insert_Dummy_Document_Details-Bloom">Bloom Filter of the document (Give in format-> ',' after index Eg-> 0,1,1,0,...</label>
+                  <input id="Insert_Dummy_Document_Details-Bloom" type="text" class="form-control"></input>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <p id="Insert_Dummy_Document_Details-result"></p>
+          </form>
+
+
+          <hr>
+
+          <form id="Insert_Document_Details">
+              <h2>Document_details</h2>
+              <div class="form-group">
+                  <label for="Insert_Document_Details-Docname">Document_Name</label>
+                  <input id="Insert_Document_Details-Docname" type="text" class="form-control"></input>
+                  <label for="Insert_Document_Details-Key">Encryption Key</label>
+                  <input id="Insert_Document_Details-Key" type="text" class="form-control"></input>
+                  <label for="Insert_Document_Details-Salt">Salt</label>
+                  <input id="Insert_Document_Details-Salt" type="text" class="form-control"></input>
+                  <label for="Insert_Document_Details-Bloom">Bloom Filter of the document (Give in format-> ',' after index Eg-> 0,1,1,0,...</label>
+                  <input id="Insert_Document_Details-Bloom" type="text" class="form-control"></input>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <p id="Insert_Document_Details-result"></p>
+          </form>
+
+          <hr>
+
+          <form id="Encryption_Key">
+            <h2>Encryption_Key</h2>
+            <div class="form-group">
+                <label for="Encryption_Key-Docname">Document_Name</label>
+                <input id="Encryption_Key-Docname" type="text" class="form-control"></input>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <p id="Encryption_Key-result"></p>
+        </form>
+
+        <hr>
+
+          <form id="Search_Keyword">
+            <h2>Search Keyword</h2>
+            <div class="form-group">
+              <label for="Search_Keyword-Keyword">Keyword</label>
+              <input id="Search_Keyword-Keyword" type="text" class="form-control"></input>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <p id="Search_Keyword-result"></p>
+          </form>
+
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
