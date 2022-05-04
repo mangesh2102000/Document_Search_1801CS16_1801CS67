@@ -8,4 +8,4 @@ under the guidance of
 by
 
 ## 1. Mangesh Chandrawanshi 1801CS16
-## 2. Puspesh Kumar 1801CS16
+## 2. Puspesh Kumar 1801CS67
